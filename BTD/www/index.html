@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>decimal to binary</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="./images/favicon1.png">
+   <form>
+</form>
+
+</head>
+
+<body>
+  
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="one-half column" style="margin-top:30% ; margin-left:5%">
+        <h4 id="p1">enter a decimal number :</h4>
+        <input type="number" min="0" max="4294967295" id="input" pattern="[0-9]" onkeypress="return isNumberKey(event);" step="1" style="width: 200px">
+        </br>
+        </br>
+        <button id="convert">convert</button>
+        <button id="swap">swap</button>
+       </br>
+       </br>
+        <h4 id="p2">binary number :</h4>
+        <textarea id="op" placeholder="" readonly style="width: 200px"></textarea>
+      </div>
+    </div>
+  </div>
+  <script src='./Conversion.js'></script>
+  <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+
+</html>
